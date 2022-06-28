@@ -26,6 +26,7 @@
  }
 
 
+ // ejecuto la funcion para agregar los items al carrito y creo el elemento div
  function agregarItemCarrito(itemTitle, itemPrecio){
     const filaCarrito = document.createElement("div");
 
@@ -52,6 +53,8 @@
 
  }
 
+
+ //aca mi idea es sumar el total del precio de los productos y hacer un create element donde muestre el total de la compra.
  function totalPrecio(){
 
     let total = 0 ;
@@ -62,7 +65,7 @@
     itemsCarrito.forEach(itemsCarrito => {
        precioitemsCarrito = itemsCarrito.querySelector(".precio").textContent;
 
-       console.log(precioitemsCarrito)
+       console.log(precioitemsCarrito)//el problema es que me selecciona siempre el mismo precio. no se como arreglarlo
     });
  }
 
